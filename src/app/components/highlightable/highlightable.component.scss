@@ -1,0 +1,58 @@
+#highlightContent {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.tools {
+  height: 30px;
+  padding: 5px 10px;
+  background: #333;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -100%);
+  transition: 0.2s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+  }
+}
+
+.item {
+  color: #FFF;
+  cursor: pointer;
+
+  path {
+    fill: #FFF;
+  }
+
+  &:hover {
+    color: #1199ff;
+
+    path {
+      fill: #1199ff
+    }
+  }
+
+  + .item {
+    margin-left: 10px;
+  }
+}
