@@ -31,7 +31,8 @@ export class HighlightableComponent implements OnInit {
     //   return;
     // }
 
-    if (!selection) {
+    if (!selection || (selection.anchorOffset === selection.focusOffset)) {
+      this.showTools = false;
       return;
     }
 
