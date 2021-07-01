@@ -4,12 +4,12 @@
     (share)="onShare($event)"
     (highlight)="onHighlight($event)"
   >
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet at debitis deserunt, optio rem eaque obcaecati non possimus nisi assumenda architecto exercitationem dolore quo praesentium, deleniti reiciendis sed ab nihil!
-    </p>
+    <div [innerHTML]="text"></div>
   </app-highlightable>
 
   <p>
-    <strong>This paragraph can't be highlighted.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ipsam repellat, fugiat aut ex incidunt ut quisquam quasi consequatur ducimus quo in, cum soluta eos dolores tempore unde voluptate modi.
+    <strong>This paragraph can't be highlighted.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Labore ipsam repellat, fugiat aut ex incidunt ut quisquam quasi consequatur ducimus quo in, cum soluta eos dolores
+      tempore unde voluptate modi.
   </p>
 </div>
